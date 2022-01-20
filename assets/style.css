@@ -323,7 +323,7 @@ main img {
     main img {
         max-width: 25%;
         height: auto;
-        margin-left: -12%;
+        margin-left: 5px;
         } 
     
     #about_me_text {
