@@ -304,6 +304,9 @@ main img {
 
 /* positioning for iphone 12 Pro */
 @media screen and (max-width: 390px) {
+    * {
+        overflow-x: hidden;
+    }
     
     header {
         padding-left: 0;
