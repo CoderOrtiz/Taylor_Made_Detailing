@@ -98,12 +98,12 @@ aside {
     border: none;
     border-left: 2px solid red;
     margin-top: -60px;
-    height: 600px;
+    height: 575px;
     width: 1px; 
  }
  
 #contact_me_text {
-    margin: 100px 0 0 10px;
+    margin: 30px 0 0 10px;
     float: left;
  }
  
@@ -251,6 +251,7 @@ table img {
 header {
     flex-direction: column;
     }
+
 }
 
 /* positioning for the page from 578px-500px */
@@ -314,8 +315,8 @@ main img {
     }
 
     aside {
-        margin-right: 0;
-        padding-left: 0;
+        margin: 0 0 5 0;
+        width: 100px;
     }
 
 
@@ -326,27 +327,46 @@ main img {
         } 
     
     #about_me_text {
-        margin-top: 5px;
-        
+        margin: 5px 0 0 0px;
+        display: flex;
+        flex-wrap: wrap;
         font-size: small;
-        
     }
 
     #about_me_hr {
-        margin: 5px 10px 0 10px;
+        margin: -30px 10px 0 10px;
         padding: 2px 0 0 0;
-        height: 170px;
+        height: 160px;
     }
 
     
 
     #work_text {
         font-size: small;
-        padding-right: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 5px 0 0;
+        padding-top: 3px;
+    }
+
+    #work_hr {
+        margin: -30px 10px 0 10px;
+        padding: 2px 0 0 0;
+        height: 364px;
     }
 
     #contact_me_text {
         font-size: small;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 22px 50px 0 0;
+        padding: 0px 0px 0 0;
+    }
+
+    #contact_me_hr {
+        margin: -27px 10px 0 10px;
+        padding: 2px 0 0 0;
+        height: 90px;
     }
     
     .section_1 {
@@ -355,9 +375,7 @@ main img {
         font-size: 2%;   
         }  
     
-    #work_text {
-            margin-top: 10px;   
-        }
+    
     
     table {
         max-width: 50%;
@@ -385,7 +403,7 @@ main img {
 
     footer{
         margin: 20px 0 0 0;
-        padding: 20px 0 20px 0px;
+        padding: 20px 0 20px 150px;
         background-color: #13293d;
         color: white;
     }
