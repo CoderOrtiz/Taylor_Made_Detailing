@@ -8,6 +8,10 @@
 
 /* styling and positioning of header */
 header {
+  min-width: 390px;
+  margin: 0;
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,8 +29,9 @@ header h1 {
 /* styling for the headers unordered list */
 header ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  min-width: 300px;
+  min-width: 100px;
   list-style: none;
 }
 
@@ -51,84 +56,48 @@ main {
 
 /* styling for profile picture */
 main img {
-    height: 150px;
-    width: 625px;
-    margin: 3% 0 2% 0;
-}
-
-/* gave h2 padding to the left */
-/* main h2 {
-    padding-left: 150px;
-    margin: 1% 0 3% 0;
-} */
-
-/* styling for aside*/
-aside {
-    margin-right: 20px;
-    padding-left: 20px;
-    float: left;
-    width: 140px;
-    height: 100%;
+    margin: 3% auto 0 auto;
+    
+    text-align: center;
+    width: 100%;
 }
 
 /* stying for aside text and hr's */
-#about_me_text {
-    float: left;
-    margin-top: 50%;
+
+h2 {
+    color: #13293d;
 }
 
-#about_me_hr{ 
-    position: relative;
-    float: right;
-    margin-top: -55px;
-    border: none;
-    border-left:2px solid red;
-    height: 200px;
-    width: 1px;
+hr { 
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba( 0, 0, 0, 0), rgba( 255, 0, 0, 1), rgba( 0, 0, 0, 0));  
  }
  
-#work_text {
-    margin: 60px -10px 0 0;
-    float: left;   
- }
  
-#work_hr { 
-    position: relative;
-    float: right;
-    border: none;
-    border-left: 2px solid red;
-    margin-top: -60px;
-    height: 575px;
-    width: 1px; 
+ .options li::before{
+     content: "🧼";
+     padding-right: 1%;
  }
+
  
-#contact_me_text {
-    margin: 30px 0 0 10px;
-    float: left;
- }
- 
-#contact_me_hr { 
-    position: relative;
-    float: right;
-    margin-top: -55px;
-    border: none;
-    border-left: 2px solid red;
-    height: 60px;
-    width: 1px;
- }
 
 /* styling for p tags */
 p {
-    margin: 3% auto 0 auto;
-    padding-left: 150px;
-    text-align: center;
+    margin: 3% auto 3% auto;
+    
+    
     line-height: 125%;
-    width: 775px;
+    width: 90%;
+    max-width: 800px;
 }
 
 /* top margin for large picture */
 .refactor {
-    margin-top: 50px; 
+    margin: 3% auto 0 auto;
+    height: 200px;
+    width: 90%;
+    max-width: 800px;
 }
 
 /* styling for refactor picture */
@@ -142,7 +111,11 @@ p {
 /* styling and positioning for the table with imgs */
 table {
     border: thick double #32a1ce;
-    margin: 0 auto 0 auto;
+    margin: 0 auto 2% auto;
+    height: 200px;
+    width: 90%;
+    max-width: 800px;
+    
 }
 
 /* styling for the table */
@@ -155,8 +128,8 @@ table img:hover {
 /* positioning for section over the contact me buttons */
 
 section h3 {
-    text-align: center;
-    padding-left: 150px;
+    width: 90%;
+    margin-left: 10%;
     margin-top: 3%;
 }
 
@@ -165,11 +138,11 @@ section {
 }
 
 section ul {
-    margin-top: 100px;
+    margin-top: 2%;
     text-align: center;
 }
 
-section li {
+.button li {
     display: inline-block;
     margin-left: 10px;
     text-align: center;
@@ -181,7 +154,6 @@ section li {
     color: white;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 20px;
     border: 1px solid;
     padding: 10px;
@@ -193,220 +165,24 @@ section li {
     transform: scale(1.1);
     transition: .5s;
     color: white;
-}
+} 
 
 /* styling and positioning for the footer */
 footer {
-    margin: 20px 0 0 0;
-    padding: 20px 0 20px 150px;
+    margin-top: 2%;
+    padding: 20px 0 20px 0%;
     background-color: #13293d;
     color: white;
 }
 
-/* positioning for the page from 768px-578px */
-@media screen and (max-width: 768px) {
-main img {
-    margin-left: 135px;
-    } 
-
-.section_1 {
-    display: flex;
-    flex-wrap: wrap;    
-    }  
-
-p {
-    padding-left: 0px;
-    }
-
-#work_text {
-        margin-top: 225px;   
-        
-    }
-
-#work_hr {
-    /* margin-top: 225px; */
-    margin: 220px 0 0px 0;
-    height: 335px;   
-    }
-
-#contact_me_hr {
-    margin: -50px 0 0px 0;
-    }
-
-section img {
-    max-width: 50%;
-    height: auto;
-    }
-
-table {
-    max-width: 50%;
-    height: auto;
-    }
-
-table img {
-    max-width: 100%;
-    height: auto;
-    }
-
+@media screen and (max-width: 916px) {
 header {
-    flex-direction: column;
-    }
-
-}
-
-/* positioning for the page from 578px-500px */
-@media screen and (max-width: 578px) {
-main img {
-        margin-right: 180px;
-    }  
-
-#about_me_hr {
-        padding: 0 0 240px 0;
-    }
-
-#work_text {
-        margin-top: 350px;   
-    }
-
-#work_hr {
-    margin-top: 335px;
-    height: 310px;
-    }
-
-.refactor {
-    margin-top: 150px;
+    padding-left: 5%;
+    
     }
 }
 
-/* positioning for the page for 500px and under */
-@media screen and (max-width: 500px) {
-main img {
-    margin-right: 275px;
-    }  
-#about_me_hr {
-    padding: 300px 0 0 0;
-    }
-#work_text {
-    margin-top: 300px;      
-    }
-#work_hr {
-    margin: 300px 0 0px 0;
-    height: 275px;
-    }
-.refactor {
-    margin-top: 60px;
-    }
-#contact_me_hr {
-    margin: 0px 0 px 0;
-    height: 103px;
-    }
-}
-
-/* positioning for iphone 12 Pro */
-@media screen and (max-width: 390px) {
-    * {
-        overflow-x: hidden;
-    }
-    
-    header {
-        padding-left: 0;
-    }
-
-    section p {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    aside {
-        margin: 0 0 5 0;
-        width: 100px;
-    }
 
 
-    main img {
-        max-width: 25%;
-        height: auto;
-        margin-left: 5px;
-        } 
-    
-    #about_me_text {
-        margin: 5px 0 0 0px;
-        display: flex;
-        flex-wrap: wrap;
-        font-size: small;
-    }
 
-    #about_me_hr {
-        margin: -30px 10px 0 10px;
-        padding: 2px 0 0 0;
-        height: 160px;
-    }
 
-    
-
-    #work_text {
-        font-size: small;
-        display: flex;
-        flex-wrap: wrap;
-        margin: 10px 5px 0 0;
-        padding-top: 3px;
-    }
-
-    #work_hr {
-        margin: -30px 10px 0 10px;
-        padding: 2px 0 0 0;
-        height: 364px;
-    }
-
-    #contact_me_text {
-        font-size: small;
-        display: flex;
-        flex-wrap: wrap;
-        margin: 22px 50px 0 0;
-        padding: 0px 0px 0 0;
-    }
-
-    #contact_me_hr {
-        margin: -27px 10px 0 10px;
-        padding: 2px 0 0 0;
-        height: 90px;
-    }
-    
-    .section_1 {
-        display: flex;
-        flex-wrap: wrap; 
-        font-size: 2%;   
-        }  
-    
-    
-    
-    table {
-        max-width: 50%;
-        height: auto;
-        }
-    
-    table img {
-        max-width: 100%;
-        height: auto;
-        }
-    
-    header {
-        flex-direction: column;
-        }
-    }
-
-    section ul {
-        margin: 25px 0 25px 0;
-    }
-
-    section h3 {
-        padding: 0;
-        margin-bottom: -35px;
-    }
-
-    footer{
-        margin: 20px 0 0 0;
-        padding: 20px 0 20px 150px;
-        background-color: #13293d;
-        color: white;
-    }
